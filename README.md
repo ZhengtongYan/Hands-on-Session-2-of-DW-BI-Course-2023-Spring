@@ -1,7 +1,7 @@
 # **Hands-on Session 2: OLAP Analysis With PostgreSQL**
 **This repository contains the instructions of the second hands-on session in our DW&BI course.** 
 
-**You need to complete the [first hands-on session](https://github.com/ZhengtongYan/Hands-on-Session-1-of-DW-BI-Course-2023-Spring) before you start the second one as you need to use the start schema created in the fisrt hands-on session.**
+**You need to complete the [first hands-on session](https://github.com/ZhengtongYan/Hands-on-Session-1-of-DW-BI-Course-2023-Spring) before you start the second one as you need to use the start schema created in the first hands-on session.**
 
 ## **Recorded Video Links**
 
@@ -12,7 +12,7 @@ Gain hands-on experience in conducting OLAP analysis using PostgreSQL.
 
 
 ## **Exercises (20 points)**
-In hands-on session 1, we focus on how to building a DW&BI application with PostgreSQL and Pentaho using the MOLAP model. In this hands-on session, we will utilize a different approach (i.e. ROLAP) to conduct the OLAP analysis only with PostgreSQL on the star schema.
+In hands-on session 1, we focus on how to building a data warehousing and business intelligence application with PostgreSQL and Pentaho using the MOLAP approach. In this hands-on session, we will utilize a different approach (i.e. ROLAP) to conduct the OLAP analysis only with PostgreSQL on the star schema.
 
 **1. Full Star Join (5 points)**
 
@@ -23,10 +23,10 @@ Create a full star join by joining the fact table with all the dimension tables.
 - INNER JOIN operation, e.g., T1 INNER JOIN T2 ON (T1.id=T2.id)
 - USING keyword, e.g., T1 INNER JOIN T2 USING (id)
 
-Those three different writing formats are based on different SQL standards. You can use * in the SELECT clause to reture everything.
+Those three different writing formats are based on different SQL standards. You can use * in the SELECT clause to return everything.
 
 
-(2) What are the surrogate key and business key in those tables? Why use the surrogate key in star schema? **(2 points)**
+(2) What are the surrogate keys and business keys in those tables? Why use the surrogate key in star schema? **(2 points)**
 
 
 **2. Top-N Query (2 points)**
