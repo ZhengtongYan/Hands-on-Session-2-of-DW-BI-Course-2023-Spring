@@ -37,7 +37,8 @@ Please use two different methods:
 - Use GROUP BY, ORDER BY, and LIMIT Operators **(1 point)**
 - Use windows function **(1 point)**
 
-**3.Cube Creation (6 points)**
+
+**3.Cube Creation (5 points)**
 
 (1) Build an OLAP cube for *sales_year* (in date_dim table) and *product_status* (in product_dim table) dimensions to calculate the total amount sold. Sort the resluts by sales_year and product_status in **ascending orders**. **(1 point)**
 
@@ -47,19 +48,7 @@ Please use two different methods:
 (3) Replace the CUBE keyword with ROLLUP and GROUPING SETS keywords respectively, compare and exaplain these results? **(2 points)** 
 
 
-**4.Pivot Table (2 points)**
-
-(1) calculate the total dollars sold per city of USA and per month in 2006. **(1 point)** 
-
-(2) Use the crosstab function (or crosstabview command in psql) to create a pivot table view to show the results in the previous step. **(1 point)** 
-
-**Tips:** Please refer to the documentaion about crosstab function and pivot table:
-
-- [**Crosstab for Pivot Table in PostgreSQL**](https://www.postgresql.org/docs/14/tablefunc.html)
-- [**Pivot table in Wikipedia**](https://en.wikipedia.org/wiki/Pivot_table)
-
-
-**5.Roll-up Operation (2 points)**
+**4.Roll-up Operation (2 points)**
 
 (1) Calculate the total amount per month, per year, per city, per product category, and per parent category. **DO NOT** use the CUBE keyword, **ONLY** use GROUP BY keyword to calculate the aggregation results. Please sort the results in **ascending orders** on each dimension. **(1 point)**
 
@@ -69,7 +58,7 @@ Please use two different methods:
 
 **Notice:** Here the *roll-up operation* is a kind of OLAP operation which is not the same as the *ROLLUP function* in SQL.
 
-**6.Drill-down Operation(2 points)**
+**5.Drill-down Operation (2 points)**
 
 (1) Calculate the total amount per country, per promotion name, and per product category. **DO NOT** use the CUBE keyword, **ONLY** use GROUP BY keyword to calculate the aggregation results. Please sort the results in **ascending orders** on each dimension. **(1 point)**
 
@@ -78,14 +67,14 @@ Please use two different methods:
 **Tips**: Drill-down means that you want to obtain more details on some dimensions, so you need to add some attributes in the GROUP BY clause.
 
 
-**7.Slice Operation (2 points)**
+**6.Slice Operation (2 points)**
 
 (1) Calculate the total dollars sold per salesrep's department, per sales_year, per sales_quarter, and per product category. **DO NOT** use the CUBE keyword, **ONLY** use GROUP BY keyword to calculate the aggregation results. Please sort the results in **ascending orders** on each dimension. **(1 point)**
 
 (2) Slicing the data cube on the first quarter in 2006. Please sort the results in **ascending orders** on each dimension. **(1 point)**
 
 
-**8.Dice Operation (2 points)**
+**7.Dice Operation (2 points)**
 
 (1) Calculate the total dollars sold per promotion name, per city, per month. **DO NOT** use the CUBE keyword, **ONLY** use GROUP BY keyword to calculate the aggregation results. Please sort  the results in **ascending orders** on each dimension. **(1 point)**
 
